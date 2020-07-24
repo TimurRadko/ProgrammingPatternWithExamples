@@ -35,14 +35,15 @@ public class RemoteControl {
     @Override
     public String toString() {
         StringBuffer stringBuffer = new StringBuffer();
-        stringBuffer.append("\n----- Remote Control -----\n");
+        stringBuffer.append("\n     ----- Remote Control -----      \n")
+                .append("     --------------------------      \n");
         for (int i = 0; i < onCommands.length; i++) {
             stringBuffer.append("[slot ")
                     .append(i)
                     .append("] ")
-                    .append(onCommands[i].getClass().getName())
+                    .append(String.format("%24s", onCommands[i].getClass().getSimpleName()))
                     .append("    ")
-                    .append(offCommands[i].getClass().getName())
+                    .append(String.format("%24s", offCommands[i].getClass().getSimpleName()))
                     .append("\n");
         }
         return stringBuffer.toString();
