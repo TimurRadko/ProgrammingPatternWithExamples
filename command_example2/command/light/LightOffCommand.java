@@ -1,9 +1,10 @@
-package com.timurradko.command_example2.command;
+package com.timurradko.command_example2.command.light;
 
+import com.timurradko.command_example2.command.Command;
 import com.timurradko.command_example2.entity.Light;
 
 public class LightOffCommand implements Command {
-    Light light;
+    private Light light;
 
     public LightOffCommand(Light light) {
         this.light = light;
@@ -12,5 +13,10 @@ public class LightOffCommand implements Command {
     @Override
     public void execute() {
         light.off();
+    }
+
+    @Override
+    public void undo() {
+        light.on();
     }
 }
