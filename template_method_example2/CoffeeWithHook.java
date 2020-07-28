@@ -3,8 +3,6 @@ package com.timurradko.template_method_example2;
 import com.timurradko.template_method_example2.utils.Utils;
 
 public class CoffeeWithHook extends CaffeineBeverageWithHook {
-    private static final String YES = "y";
-    private static final String NO = "n";
     private static final String QUESTION = "Would you like milk and sugar with your coffee (y/n)?";
 
     @Override
