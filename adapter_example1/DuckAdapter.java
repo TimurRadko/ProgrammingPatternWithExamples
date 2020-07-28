@@ -1,4 +1,4 @@
-package com.timurradko.adapter;
+package com.timurradko.adapter_example1;
 
 import java.util.Random;
 

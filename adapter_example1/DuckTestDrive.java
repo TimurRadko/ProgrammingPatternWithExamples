@@ -1,4 +1,4 @@
-package com.timurradko.adapter;
+package com.timurradko.adapter_example1;
 
 public class DuckTestDrive {
     public static void main(String[] args) {
