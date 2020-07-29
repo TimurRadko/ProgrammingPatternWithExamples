@@ -1,4 +1,4 @@
-package com.timurradko.iterator;
+package com.timurradko.iterator_example1;
 
 public class Waitress {
     private PancakeHouseMenu pancakeHouseMenu;
@@ -39,10 +39,7 @@ public class Waitress {
             return true;
         }
         Iterator dinnerIterator = dinnerMenu.createIterator();
-        if (isVegetarian(name, dinnerIterator)) {
-            return true;
-        }
-        return false;
+        return isVegetarian(name, dinnerIterator);
     }
 
 

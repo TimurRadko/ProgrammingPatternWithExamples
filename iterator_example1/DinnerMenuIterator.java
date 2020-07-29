@@ -1,4 +1,4 @@
-package com.timurradko.iterator;
+package com.timurradko.iterator_example1;
 
 public class DinnerMenuIterator implements Iterator {
     private MenuItem[] items;

@@ -1,4 +1,4 @@
-package com.timurradko.iterator;
+package com.timurradko.iterator_example1;
 
 import java.util.ArrayList;
 import java.util.List;

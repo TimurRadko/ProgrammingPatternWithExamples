@@ -1,4 +1,4 @@
-package com.timurradko.iterator;
+package com.timurradko.iterator_example2;
 
 public class MenuItem {
     private String name;

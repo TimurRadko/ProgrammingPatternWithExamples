@@ -1,6 +1,8 @@
-package com.timurradko.iterator;
+package com.timurradko.iterator_example2;
 
-public class DinnerMenu {
+import java.util.Iterator;
+
+public class DinnerMenu implements Menu {
     private static final int MAX_ITEMS = 6;
     private int numberOfItems = 0;
     private MenuItem[] items;
@@ -40,7 +42,8 @@ public class DinnerMenu {
         return items;
     }
 
-    public Iterator createIterator() {
+    @Override
+    public Iterator<MenuItem> createIterator() {
         return new DinnerMenuIterator(items);
     }
 }
