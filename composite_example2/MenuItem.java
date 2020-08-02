@@ -1,4 +1,6 @@
-package com.timurradko.composite_example1;
+package com.timurradko.composite_example2;
+
+import java.util.Iterator;
 
 public class MenuItem extends MenuComponent {
     private String name;
@@ -43,5 +45,10 @@ public class MenuItem extends MenuComponent {
         }
         System.out.print(", " + getPrice());
         System.out.print("\n -- " + getDescription());
+    }
+
+    @Override
+    public Iterator<MenuComponent> createIterator() {
+        return new NullIterator();
     }
 }
